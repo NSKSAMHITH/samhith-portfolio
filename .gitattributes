@@ -2,3 +2,7 @@
 images/harry-br.gif filter=lfs diff=lfs merge=lfs -text
 images/harry-playing.gif filter=lfs diff=lfs merge=lfs -text
 images/tiger.gif filter=lfs diff=lfs merge=lfs -text
+*.mp4 filter=lfs diff=lfs merge=lfs -text
+videos/harry-babu.mp4 filter=lfs diff=lfs merge=lfs -text
+videos/harry-car.mp4 filter=lfs diff=lfs merge=lfs -text
+videos/harry-sleeping.mp4 filter=lfs diff=lfs merge=lfs -text
