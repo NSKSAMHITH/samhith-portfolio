@@ -1,1 +1,4 @@
 *.gif filter=lfs diff=lfs merge=lfs -text
+images/harry-br.gif filter=lfs diff=lfs merge=lfs -text
+images/harry-playing.gif filter=lfs diff=lfs merge=lfs -text
+images/tiger.gif filter=lfs diff=lfs merge=lfs -text
