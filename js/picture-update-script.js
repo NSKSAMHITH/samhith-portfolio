@@ -1,11 +1,10 @@
 const images = [
-    { src: '/images/harry-br.gif', duration: 5000 }, // Duration in milliseconds
-    { src: '/images/harry-playing.gif', duration: 4000 },
-    { src: '/images/harry-portrait.png', duration: 3000 },
+    { src: '/images/beach-harry.png', duration: 5000 },
+    { src: '/images/beach-harry.png', duration: 4000 },
+    { src: '/images/beach-harry.png', duration: 3000 },
     { src: '/images/beach-harry.png', duration: 6000 },
-    { src: '/images/jelly-fish.gif', duration: 7000 },
-    { src: '/images/boxing-me.gif', duration: 7000 }
-
+    { src: '/images/beach-harry.png', duration: 8000 },
+    { src: '/images/beach-harry.png', duration: 9000 }
     // Add more image paths and durations as needed
 ];
 
@@ -33,7 +32,9 @@ function updateImage(imgElement) {
 
     imgElement.classList.remove('loaded');
     setTimeout(() => {
-        imgElement.src = src;
+        // Append a unique query string to the image URL to force reload
+        const uniqueSrc = `${src}?${new Date().getTime()}`;
+        imgElement.src = uniqueSrc;
         imgElement.onload = () => {
             imgElement.classList.add('loaded');
         };
